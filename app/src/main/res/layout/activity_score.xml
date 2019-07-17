@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ScoreActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/names"
+            android:textColor="#FFFFFF"
+            android:layout_margin="5dp"
+            android:background="@color/colorPrimary"
+            android:layout_weight="1"
+            android:textSize="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <EditText
+            android:layout_margin="5dp"
+            android:id="@+id/score"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:textSize="30dp"
+            android:textColor="@color/colorAccent"
+            android:hint="Enter score according to names on left side line by line"
+            android:gravity="start|top"
+            android:inputType="textMultiLine" />
+
+
+    </LinearLayout>
+    <Button
+        android:onClick="addScores"
+        android:layout_margin="10dp"
+        android:background="@color/colorAccent"
+        android:textColor="#FFFFFF"
+        android:text="ADD"
+        android:layout_weight="9"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

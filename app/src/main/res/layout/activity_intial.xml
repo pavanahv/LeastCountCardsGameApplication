@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".IntialActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/names"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Enter names line by line"
+                android:textColor="@color/colorAccent"
+                android:gravity="start|top"
+                android:layout_margin="10dp"
+                android:inputType="textMultiLine" />
+
+            <EditText
+                android:id="@+id/score_limit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Score Limit"
+                android:layout_margin="10dp"
+                android:ems="10"
+                android:textColor="@color/colorAccent"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="add"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:background="@color/colorAccent"
+                android:text="Add" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
